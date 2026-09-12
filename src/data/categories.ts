@@ -3,44 +3,45 @@ export interface Category {
   name: string;
   icon: string;
   description: string;
-  color: string;
+  badge?: string;
 }
 
 export const categories: Category[] = [
   {
+    id: 'all',
+    name: 'ALL',
+    icon: '✨',
+    description: 'Explore our complete menu of handcrafted coffee & delicacies',
+  },
+  {
     id: 'hot-coffees',
-    name: 'Hot Coffees',
+    name: 'ESPRESSO',
     icon: '☕',
-    description: 'Classic espresso drinks crafted to warm your soul',
-    color: 'from-amber-600 to-orange-700',
+    description: 'Classic single-origin espresso drinks crafted to perfection',
   },
   {
     id: 'cold-coffees',
-    name: 'Cold Coffees',
+    name: 'COLD BREW',
     icon: '🧊',
-    description: 'Refreshing iced beverages for any season',
-    color: 'from-cyan-500 to-blue-600',
+    description: '24-hour slow steeped cold brews and velvety nitrogen pours',
   },
   {
     id: 'frappuccinos',
-    name: 'Frappuccinos',
+    name: 'BLENDED',
     icon: '🥤',
-    description: 'Blended frozen treats to satisfy your cravings',
-    color: 'from-pink-500 to-rose-600',
+    description: 'Frozen blended specialty treats crowned with fresh cream',
   },
   {
     id: 'teas',
-    name: 'Teas',
+    name: 'TEA & BOTANICALS',
     icon: '🍵',
-    description: 'Soothing teas and tea lattes for mindful moments',
-    color: 'from-emerald-500 to-green-600',
+    description: 'Kyoto matcha, spices, and floral tea infusions',
   },
   {
     id: 'bakery',
-    name: 'Bakery',
+    name: 'DESSERTS & BAKERY',
     icon: '🥐',
-    description: 'Freshly baked pastries and breads, made daily',
-    color: 'from-yellow-500 to-amber-600',
+    description: 'French butter pastries and chocolate bake house specialties',
   },
 ];
 

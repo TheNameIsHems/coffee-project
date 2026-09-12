@@ -71,7 +71,7 @@ export default function FeaturedSection() {
                       {product.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-xl font-bold text-coffee-700">${product.price.toFixed(2)}</span>
+                      <span className="text-xl font-bold text-coffee-700">₹{product.price}</span>
                       <button
                         onClick={() => handleAdd(product)}
                         className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-coffee-600 to-coffee-700 text-white text-sm font-medium hover:from-coffee-700 hover:to-coffee-800 shadow-md shadow-coffee-600/20 transition-all duration-300 active:scale-95"
